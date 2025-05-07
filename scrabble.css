@@ -1,0 +1,68 @@
+table.scrabble tbody {
+    counter-reset: row-number;
+}
+
+table.scrabble > tbody > tr {
+    counter-increment: row-number;
+}
+
+table.scrabble > tbody > tr > th::before {
+    content: counter(row-number, upper-alpha);
+}
+
+table.scrabble {
+    border-collapse: collapse;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+table.scrabble td, table.scrabble th {
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.scrabble td {
+    background-color: green;
+    border: medium solid black;
+    font-size: 60%;
+    text-transform: uppercase;
+}
+
+table.scrabble td.tws {
+    background-color: red;
+}
+
+table.scrabble td.tws::before {
+    content: "Triple Word";
+}
+
+table.scrabble td.dws {
+    background-color: pink;
+}
+
+table.scrabble td.dws::before {
+    content: "Double Word";
+}
+
+table.scrabble td.dws.center::before {
+    content: "\2605";
+    font-size: 300%;
+}
+
+table.scrabble td.dls {
+    background-color: lightblue;
+}
+
+table.scrabble td.dls::before {
+    content: "Double Letter";
+}
+
+table.scrabble td.tls {
+    background-color: dodgerblue;
+}
+
+table.scrabble td.tls::before {
+    content: "Triple Letter";
+}

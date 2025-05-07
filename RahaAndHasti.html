@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raha and Hasti's Dental Clinic</title>
+    <link rel="stylesheet" href="RH.css">
+</head>
+<body>
+    <header>
+    <h1>RH Dental Clinic</h1>
+    </header>
+    <form>
+        <div>
+            <label>
+                Name
+                <input type="text" name="name"
+                required
+                placeholder="e.g., John Smith">
+            </label>
+        
+        <div>
+            Date of Birth
+            <label>
+                <input type="date" name="dob" required>
+            </label>
+
+        <div>
+            <label>
+                Sex
+                <select naem="sex" required>
+                    <option value="--Please fill in the blank--">Please fill in the blank</option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                </select>
+            </label>
+        </div>
+
+        <div>
+            
+            <label>
+                Email Address
+                <input type="email" required
+                placeholder="e.g., johnsmith@gmail.com">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Phone Number
+                <input type="number" required>
+            </label>
+        </div>
+
+        <div>
+            Allergies
+            <label>
+                <input type="text" name="allergies" required
+                placeholder="e.g., Lidocaine">
+            </label>
+
+        <div>
+            Medication
+            <textarea name="medication"
+            row="10"
+            maxlength="200"
+            required
+            placeholder="In case of using any type of medication,
+mention them above"></textarea>
+        </div>
+
+        <div>
+            Surgeries
+            <textarea name="surgeries"
+            rows="5"
+            maxlength="200"
+            required
+            placeholder="In case of any surgeries in the 
+past 2 years, mention them above"></textarea>
+        </div>
+
+        <div>
+            <label>
+                I hereby state that I am pregnant.
+                <input type="checkbox" name="is-pregnant"
+                value="yes">
+            </label>
+            <fieldset>
+                <legend>Which trimaster of pregnancy?</legend>
+                <input type="number" name="months"
+                placeholder="e.g., 2">
+            </fieldset>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+        <div>
+            <label>
+                Thank you for choosing us. We will contact you as soon as possible.
+            </label>
+        </div>
+    </form>
+</body>
+</html>
